@@ -24,4 +24,5 @@ try:
             s.quit()
 except Exception as e:
         print('Exception! => %s' %e)
-        sys.exit(2)
+finally:
+    os.system('rm status')
