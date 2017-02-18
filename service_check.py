@@ -11,7 +11,8 @@ try:
         m = re.search("active \(running\)", reg)
         try:
             if m.group(0):
-                print(str(sys.argv[1]) + ' is active')
+                pass
+                #Do nothing, service is up and running
         except:
             msg = MIMEText(mime)
             msg['Subject'] = str(sys.argv[1]) + ' has stopped working'
